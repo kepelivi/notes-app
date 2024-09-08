@@ -52,6 +52,7 @@ class AddNoteActivity : ComponentActivity() {
             .addOnSuccessListener { documentReference ->
                 Toast.makeText(this, "Note added", Toast.LENGTH_SHORT).show()
                 Log.d(TAG, "DocumentSnapshot added with ID: ${documentReference.id}")
+                finish()
             }
             .addOnFailureListener { e ->
                 Toast.makeText(this, "Error adding note", Toast.LENGTH_SHORT).show()

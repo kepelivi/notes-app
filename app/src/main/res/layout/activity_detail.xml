@@ -31,6 +31,7 @@
         android:id="@+id/deleteButton"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="@string/delete" />
+        android:text="@string/delete"
+        android:onClick="onDelete"/>
 
 </LinearLayout>

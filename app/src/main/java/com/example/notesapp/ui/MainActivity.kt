@@ -19,6 +19,7 @@ class MainActivity : ComponentActivity() {
     private lateinit var listView: ListView
     private lateinit var noteAdapter: NoteAdapter
     private val noteList = ArrayList<Note>()
+    private val ids = ArrayList<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,6 +53,7 @@ class MainActivity : ComponentActivity() {
                     noteList.clear()
 
                     for (document in snapshots) {
+                        ids.add(document.id)
                         val title = document.getString("title") ?: "Untitled"
                         val content = document.getString("content") ?: "No content"
                         val timestamp = document.getString("timestamp") ?: System.currentTimeMillis().toString()
@@ -73,6 +75,7 @@ class MainActivity : ComponentActivity() {
             val intent = Intent(this, NoteDetailsActivity::class.java)
 
             intent.putExtra("NOTE", clickedNote)
+            intent.putExtra("NOTE_ID", ids[position])
 
             startActivity(intent)
         }
