@@ -3,6 +3,7 @@ package ui
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.ComponentActivity
@@ -27,7 +28,7 @@ class AddNoteActivity : ComponentActivity() {
     }
 
     @RequiresApi(Build.VERSION_CODES.O)
-    fun saveNote() {
+    fun saveNote(view: View) {
         val addNoteTitle: EditText = findViewById(R.id.editTextTitle)
         val addNote: EditText = findViewById(R.id.editTextNote)
 
