@@ -1,4 +1,4 @@
-package ui
+package com.example.notesapp.ui
 
 import android.os.Build
 import android.os.Bundle
@@ -11,7 +11,7 @@ import androidx.annotation.RequiresApi
 import com.example.notesapp.R
 import com.google.firebase.Firebase
 import com.google.firebase.firestore.firestore
-import models.Note
+import com.example.notesapp.models.Note
 import java.time.LocalDateTime
 
 private const val TITLE = "title"

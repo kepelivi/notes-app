@@ -1,4 +1,4 @@
-package adapters
+package com.example.notesapp.adapters
 
 import android.content.Context
 import android.util.Log
@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 import com.example.notesapp.R
-import models.Note
+import com.example.notesapp.models.Note
 
 class NoteAdapter(private val context: Context, private val notes: List<Note>) : BaseAdapter() {
     override fun getCount(): Int = notes.size
