@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/black">
 
     <EditText
         android:id="@+id/editTextTitle"
@@ -12,15 +13,21 @@
         android:layout_height="70dp"
         android:hint="@string/title"
         android:inputType="text"
-        android:textSize="50sp" />
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/cardview_dark_background"/>
 
     <EditText
         android:id="@+id/editTextNote"
         android:layout_width="match_parent"
-        android:layout_height="64dp"
+        android:layout_height="509dp"
         android:hint="@string/enter_note"
-        android:inputType="text"
-        android:textSize="40sp" />
+        android:inputType="textMultiLine"
+        android:textSize="24sp"
+        android:gravity="top"
+        android:scrollbars="vertical"
+        android:textColor="@color/white"
+        android:textColorHint="@color/cardview_dark_background" />
 
     <Button
         android:id="@+id/buttonAddNote"
