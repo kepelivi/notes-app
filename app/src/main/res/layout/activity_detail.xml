@@ -14,15 +14,26 @@
         android:layout_margin="15dp"
         android:textSize="20sp" />
 
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:visibility="gone"
+        android:onClick="onSaveUpdate"/>
+
     <androidx.cardview.widget.CardView
         android:id="@+id/Card_View_Data"
         android:layout_width="match_parent"
-        android:layout_height="545dp">
+        android:layout_height="480dp">
 
-        <TextView
+        <EditText
             android:id="@+id/noteDetails"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:hint="@string/no_content"
+            android:inputType="textMultiLine"
             android:textSize="20sp" />
 
     </androidx.cardview.widget.CardView>

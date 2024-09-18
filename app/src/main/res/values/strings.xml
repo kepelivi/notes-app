@@ -8,4 +8,6 @@
     <string name="enter_note">Enter your note here</string>
     <string name="add_note">Add Note</string>
     <string name="title">Title</string>
+    <string name="no_content">No content</string>
+    <string name="save">Save</string>
 </resources>
